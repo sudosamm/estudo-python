@@ -1,0 +1,6 @@
+#colocar aqui os arquivos a serem ignorados no commit/push
+__pycache__/
+.venv/
+.pytest_cache/
+
+.env

@@ -1,7 +1,7 @@
 [project]
 name = "estudo-python"
 version = "0.1.0"
-description = "Add your description here"
+description = "Projeto para aprender python"
 readme = "README.md"
 authors = [
     { name = "sudosamm", email = "sasapatricksaint@gmail.com" }
