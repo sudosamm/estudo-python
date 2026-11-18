@@ -1,7 +1,7 @@
 [project]
-name = "estudo-python"
+name = "tarefas-cli"
 version = "0.1.0"
-description = "Projeto para aprender python"
+description = "Sistema de gerenciamento de tarefas via CLI"
 readme = "README.md"
 authors = [
     { name = "sudosamm", email = "sasapatricksaint@gmail.com" }
