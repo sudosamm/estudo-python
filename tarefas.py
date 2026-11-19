@@ -3,8 +3,10 @@ from datetime import datetime  # biblioteca para manipulação de datas
 
 
 def carregar_tarefas():
-    with open("tarefas.json", encoding="utf-8") as data_file:  # abre o arquivo tarefas.json para leitura como "data_file"
-        tarefas = json.load(data_file)  # a variável "tarefas" recebe o conteúdo do arquivo json
+    # abre o arquivo tarefas.json para leitura como "data_file"
+    with open("tarefas.json", encoding="utf-8") as data_file:  
+        # a variável "tarefas" recebe o conteúdo do arquivo json
+        tarefas = json.load(data_file)  
     return tarefas
 
 
@@ -30,7 +32,7 @@ def verificar_escolha(area, funcao):
             case _:
                 exibir_menu()
                 escolha = input(
-                    "Digite o número da opção desejada (ou 0 para cancelar): "
+                    "Digite o número da opção desejada: "
                 )
         if escolha.isdigit():
             escolha = int(escolha)
@@ -40,7 +42,7 @@ def verificar_escolha(area, funcao):
             elif escolha == 0:
                 print("Operação cancelada.")
                 menu_loop = False
-                return False
+                return None
         print("Entrada inválida. Por favor, escolha entre os números exibidos no menu.")
 
 
@@ -113,7 +115,6 @@ menu = [
 if __name__ == "__main__":
     main_loop = True  # variável de controle do loop principal
     while main_loop:
-        menu_loop = True  # variável de controle do loop de escolha de opções
         lista = carregar_tarefas()
         print("=================================")
         print("Gerenciador de Tarefas")
@@ -129,12 +130,12 @@ if __name__ == "__main__":
                 listar_tarefas(lista)
             case 3:
                 selecao = verificar_escolha(lista, "concluir")
-                if not selecao:
+                if selecao is None:
                     continue
                 concluir_tarefa(selecao, lista)
             case 4:
                 selecao = verificar_escolha(lista, "remover")
-                if not selecao:
+                if selecao is None:
                     continue
                 remover_tarefa(selecao, lista)
             case 5:
