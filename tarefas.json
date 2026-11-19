@@ -8,19 +8,19 @@
     {
         "concluida": false,
         "criada_em": "2026-11-18",
-        "descricao": "Estudar Programa\u00e7\u00e3o Orientada ao \u00d3dio (POO)",
+        "descricao": "Estudar Programação Orientada ao Ódio (POO)",
         "id": 2
     },
     {
         "concluida": true,
         "criada_em": "2026-11-18",
-        "descricao": "Adicionar a fun\u00e7\u00e3o de 'Marcar como conclu\u00edda'",
+        "descricao": "Adicionar a função de 'Marcar como concluída'",
         "id": 3
     },
     {
         "concluida": true,
         "criada_em": "2026-11-18",
-        "descricao": "Adicionar a fun\u00e7\u00e3o de remover tarefa",
+        "descricao": "Adicionar a função de remover tarefa",
         "id": 4
     }
 ]

@@ -17,13 +17,22 @@ Changelog manual para me manter a par do que estou fazendo.
 - Sistema agora salva no momento da inserção da tarefa (se você iniciava o programa às 23:59 e salvava algo às 00:00, o código considerava a data em que o programa iniciou, ou seja, na data anterior).
 - Conteúdo fica salvo com encoding UTF-8.
 
+### 19/11/2026
+- Laço principal foi colocado no main().
+- Corrigido erro em que eu estava utilizando a lista do menu para concluir ou remover itens.
+- Corrigida formatação do documento. Agora o arquivo salva mesmo com acentos ao invés de salvar como `Programa\u00e7\u00e3o`.
+- Corrigidas algumas variáveis que não tinham uso.
+- Aplicado o padrão snake_case nas variáveis.
+- Outros blocos repetidos foram inseridos em uma única função.
+
 ---
 
 ## To-Do List (lista de afazeres para a lista de tarefas, redundante mas é isso aí mesmo)
 - [x] Opção `Remover tarefa` funcionando.
 - [x] Opção `Marcar como concluída` funcionando.
 - [x] Verificar e validar as respostas do usuário para prevenir erros.
-- [ ] Impedir inserção de tarefas com apenas uma ou duas palavras.
+- [ ] Impedir inserção de tarefas ~~com apenas uma ou duas palavras~~ vazias.
+- [ ] Padronizar a linguagem.
 - [ ] Colocar `Data de Conclusão` para as tarefas.
 - [ ] Permitir que o sistema rode mesmo sem um arquivo `.json`.
 - [ ] Possibilitar a criação de várias listas (pode ser útil).
