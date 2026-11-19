@@ -24,6 +24,9 @@ Changelog manual para me manter a par do que estou fazendo.
 - Corrigidas algumas variáveis que não tinham uso.
 - Aplicado o padrão snake_case nas variáveis.
 - Outros blocos repetidos foram inseridos em uma única função.
+- `verificar_escolha` retorna `None` ao invés de 0.
+- Removida mensagem dizendo para utilizar 0 para cancelar no menu principal.
+- `menu_loop` sem uso foi removido.
 
 ---
 
