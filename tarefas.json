@@ -4,5 +4,23 @@
         "criada_em": "2026-11-18",
         "descricao": "Estudar python e seus usos",
         "id": 1
+    },
+    {
+        "concluida": false,
+        "criada_em": "2026-11-18",
+        "descricao": "Estudar Programa\u00e7\u00e3o Orientada ao \u00d3dio (POO)",
+        "id": 2
+    },
+    {
+        "concluida": true,
+        "criada_em": "2026-11-18",
+        "descricao": "Adicionar a fun\u00e7\u00e3o de 'Marcar como conclu\u00edda'",
+        "id": 3
+    },
+    {
+        "concluida": true,
+        "criada_em": "2026-11-18",
+        "descricao": "Adicionar a fun\u00e7\u00e3o de remover tarefa",
+        "id": 4
     }
 ]

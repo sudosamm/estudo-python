@@ -4,21 +4,28 @@ Este gerenciador de tarefas serve para ajudar o usuário a entender melhor o fun
 ---
 
 ## Changelog
-Changelog manual para me manter a par do que estou fazendo
+Changelog manual para me manter a par do que estou fazendo.
 
 ### 18/11/2026 
-- Base criada: o gerenciador realiza a leitura de um arquivo .json chamado "tarefas.json", cujo qual precisa possuir pelo menos um par de colchetes `[]` e insere os dados que o usuário quer inserir, além de salvar no arquivo e listar esses dados. <strong>Ainda não é possível remover, marcar como concluído nem criar arquivos próprios, como outras listas</strong>. 
+- Base criada: o gerenciador realiza a leitura de um arquivo .json chamado "tarefas.json", cujo qual precisa possuir pelo menos um par de colchetes `[]` e insere os dados que o usuário quer inserir, além de salvar no arquivo e listar esses dados. <strong>Ainda não é possível ~~remover, marcar como concluído nem~~ criar arquivos próprios, como outras listas</strong>. 
 - Repositório modificado para manter o foco apenas no projeto do sistema de tarefas. 
-- Readme atualizado com [Changelog](#Changelog) organizado por data e [To Do](#To-Do) list
+- Readme atualizado com [Changelog](#Changelog) organizado por data e [To Do](#To-Do) list.
+- Adicionadas as funcionalidades de <strong>marcar tarefa como concluída</strong> e <strong>remover tarefa da lista</strong>, com a própria lista tendo seu index atualizado.
+- Código separado em funções para facilitar controle e escalamento.
+- Prevenção de erros de digitação do usuário como caracteres inválidos ou números fora do escopo no menu.
+- Tarefas sendo exibidas a cada menu quando há interação necessária.
+- Sistema agora salva no momento da inserção da tarefa (se você iniciava o programa às 23:59 e salvava algo às 00:00, o código considerava a data em que o programa iniciou, ou seja, na data anterior).
+- Conteúdo fica salvo com encoding UTF-8.
 
 ---
 
-## To Do
-- [x] Fazer o sistema salvar qualquer besteira no `.json`.
-- [ ] Opção `Remover tarefa` funcionando.
-- [ ] Opção `Marcar como concluída`.
-- [ ] Verificar e validar as respostas do usuário.
+## To-Do List (lista de afazeres para a lista de tarefas, redundante mas é isso aí mesmo)
+- [x] Opção `Remover tarefa` funcionando.
+- [x] Opção `Marcar como concluída` funcionando.
+- [x] Verificar e validar as respostas do usuário para prevenir erros.
+- [ ] Impedir inserção de tarefas com apenas uma ou duas palavras.
+- [ ] Colocar `Data de Conclusão` para as tarefas.
 - [ ] Permitir que o sistema rode mesmo sem um arquivo `.json`.
 - [ ] Possibilitar a criação de várias listas (pode ser útil).
 - [ ] Armazenar e ler o(s) arquivo(s) de tarefas em uma pasta específica do sistema ao invés da raíz onde o projeto se encontra.
-- [ ] Configurar formatação UTF-8 (acho que seria essa) no arquivo.
+- [x] Configurar formatação UTF-8 (acho que seria essa) no arquivo.
